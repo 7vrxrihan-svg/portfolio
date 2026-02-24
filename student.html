@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management Tool</title>
+<style>
+body{
+font-family: Arial;
+background:#f4f4f4;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:20px;
+border-radius:10px;
+width:350px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+width:100%;
+padding:8px;
+margin:5px 0;
+}
+
+button{
+padding:8px;
+margin-top:5px;
+cursor:pointer;
+}
+
+ul{
+padding:0;
+list-style:none;
+}
+
+li{
+background:#eee;
+margin-top:5px;
+padding:8px;
+display:flex;
+justify-content:space-between;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Student Management Tool</h2>
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="roll" placeholder="Roll Number">
+<button onclick="addStudent()">Add Student</button>
+
+<ul id="list"></ul>
+
+</div>
+
+<script src="student.js"></script>
+
+</body>
+</html>
+<script src="main.js"></script>
